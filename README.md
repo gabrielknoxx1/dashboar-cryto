@@ -1,1 +1,1 @@
-# dashboar-cryto
+# dashboard-cryto
