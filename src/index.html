@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+ <div class="container">
+   <div class="nav-container">
+    <div id="img-container">
+      <img src="./assets/Logo.svg" alt="Logo">
+    </div>
+
+    <nav id="nav-container">
+      <button type="button" id="dashboard">
+        <img src="/src/assets/icon/24/dasboard.svg" alt="Dashboard">
+        <p>Dashboard</p>
+      </button>
+      <button type="button">
+        <img src="/src/assets/icon/24/trade.svg" alt="Trade">
+        <p>Trade</p>
+      </button>
+      <button type="button">
+        <img src="/src/assets/icon/24/donate.svg" alt="Deposits">
+        <p>Deposits</p>
+      </button>
+      <button type="button">
+        <img src="/src/assets/icon/24/protocols.svg" alt="Protocols">
+        <p>Protocols</p>
+      </button>
+      <button type="button">
+        <img src="/src/assets/icon/24/setting.svg" alt="Settings">
+        <p>Settings</p>
+      </button>
+      <button type="button">
+        <img src="/src/assets/icon/24/user.svg" alt="Profile">
+        <p>Profile</p>
+      </button>
+    </nav>
+
+    <div id="logout-container">
+      <button type="button">
+        <img src="/src/assets/icon/24/logout.svg" alt="log out">
+        <p>Log Out</p>
+      </button>
+    </div>
+   </div>
+   <div class="main-content-container">
+     <header>
+       <strong>Welcome Back, Arkhan</strong>
+       <div id="painel-container">
+         <div id="input-container">
+           <button type="button">
+             <img src="./assets/icon/24/search.svg" alt="Search icon">
+           </button>
+            <input type="text" name="search" id="search" placeholder="Search">
+        </div>
+
+        <button type="button">
+          <img src="./assets/icon/24/notifications.svg" alt="Notifications icon">
+        </button>
+      </div>
+
+      <div id="profile-container">
+        <p>Evano</p>
+        <img src="./assets/Profile.svg" alt="Profile icon">
+       </div>
+     </header>
+
+     <div id="content">
+       <div id="large-content">
+         <div id="chart-container">
+           <div class="card">
+             <div class="img-card">
+               <img src="/src/assets/icon/24/moneys.svg"  alt="moneys">
+               <section class="card-values">
+                 <p class="card-title">Total assets</p>
+                 <strong class="card-amount">$ 87.743</strong>
+               </section>
+             </div>
+             <div class="img-card">
+               <img src="/src/assets/icon/24/wallet-money.svg"  alt="wallet">
+               <section  class="card-values">
+                <p class="card-title">Total deposits</p>
+                <strong class="card-amount">$ 78.342</strong>
+              </section>
+             </div>
+             <div class="img-card">
+               <img src="/src/assets/icon/24/chart-square.svg"  alt="chart">
+               <section  class="card-values">
+                <p class="card-title">APY</p>
+                <strong class="card-amount">+ 12.3%</strong>
+              </section>
+             </div>
+           </div>
+
+           <img src="/src/assets/chart-container.svg" alt="chart container">
+         </div>
+
+         <div id="tokens-container">
+           <strong>Tokens</strong>
+
+           <div id="grid-coins">
+             <p>Name</p>
+             <p>Balance</p>
+             <p>Total Value</p>
+             <p id="trade">Trade</p>
+             <div class="img-coin-container">
+              <img src="/src/assets/logo/24/bitcoin.svg" alt="">
+              <p>Bitcoin</p>
+            </div>
+             <p>0,04321</p>
+             <p>$2,340.32</p>
+             <button class="trade">Trade</button>
+             <div class="img-coin-container">
+              <img src="/src/assets/logo/24/ethereum.svg" alt="ethereum">
+              <p>Ethereum</p>
+            </div>
+             <p>32,234</p>
+             <p>$5,340.32</p>
+             <button class="trade">Trade</button>
+           </div>
+         </div>
+       </div>
+
+       <div id="side-content">
+        <div id="coins-container">
+          <p id="chain-allocation">Chain Allocation</p>
+
+          <div class="coin-container">
+            <div class="top-content">
+            <div class="img-coin-container">
+              <img src="/src/assets/logo/24/bitcoin.svg" alt="">
+              <p>Bitcoin</p>
+            </div>
+            <p class="coin-value">$23,3B</p>
+          </div>
+            <div class="progress-bar">
+              <progress id="bitcoin-coin" value="71.68" max="100" > </progress>
+              71,68%
+            </div>
+          </div>
+          <div class="coin-container">
+            <div class="top-content">
+            <div class="img-coin-container">
+              <img src="/src/assets/logo/24/ethereum.svg" alt="ethereum">
+              <p>Ethereum</p>
+            </div>
+            <p class="coin-value">$23,3B</p>
+          </div>
+            <div class="progress-bar">
+              <progress id="ethereum-coin" value="71.68" max="100" > </progress>
+              71,68%
+            </div>
+          </div>
+          <div class="coin-container">
+            <div class="top-content">
+            <div class="img-coin-container">
+              <img src="/src/assets/logo/24/shiba.svg" alt="">
+              <p>Shiba</p>
+            </div>
+            <p class="coin-value">$23,3B</p>
+          </div>
+            <div class="progress-bar">
+              <progress id="shiba-coin" value="71.68" max="100" > </progress>
+              71,68%
+            </div>
+          </div>
+          <div class="coin-container">
+            <div class="top-content">
+            <div class="img-coin-container">
+              <img src="/src/assets/logo/24/solona.svg" alt="">
+              <p>Solona</p>
+            </div>
+            <p class="coin-value">$23,3B</p>
+          </div>
+            <div class="progress-bar">
+              <progress id="solona-coin" value="71.68" max="100" > </progress>
+              71,68%
+            </div>
+          </div>
+          <div class="coin-container">
+            <div class="top-content">
+            <div class="img-coin-container">
+              <img src="/src/assets/logo/24/tether.svg" alt="">
+              <p>Tether-coin</p>
+            </div>
+            <p class="coin-value">$23,3B</p>
+          </div>
+            <div class="progress-bar">
+              <progress id="Tether-coin" value="71.68" max="100" > </progress>
+              71,68%
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="button">
+              View All
+            </button>
+          </div>
+        </div>
+
+        <div id="join-container">
+          <img src="/src/assets/group.svg" alt="group people">
+          <strong>Join Our Community</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="button-container">
+            <button type="button">
+              Join Now
+            </button>
+          </div>
+        </div>
+       </div>
+
+     </div>
+
+   </div>
+ </div>
+</body>
+</html>
